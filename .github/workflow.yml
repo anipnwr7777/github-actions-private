@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+    repository:
+      # Owner and repository name of the triggering repository
+      - owner: anipnwr7777
+        name: github-actions-public
+    types:
+      - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run your build or test commands
+      run: |
+        # Add your build/test commands here
